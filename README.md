@@ -1,4 +1,4 @@
 # scripts
 My script collection
 
-DOS batch, powrshell and bash - mainly
+DOS batch, powershell and bash - mainly
