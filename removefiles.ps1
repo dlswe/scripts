@@ -9,26 +9,26 @@ cd Z:\Roon\Datum
 
 # Remove radio shows
 Write-Host "Removing radio shows"
-Get-ChildItem *-DVBS-* -Recurse | Remove-Item
-Get-ChildItem *-SAT-* -Recurse | Remove-Item
-Get-ChildItem *-DAB-* -Recurse | Remove-Item
+Get-ChildItem -filter *-DVBS-* -Recurse | Remove-Item -Recurse
+Get-ChildItem -filter *-SAT-* -Recurse | Remove-Item -Recurse
+Get-ChildItem -filter *-DAB-* -Recurse | Remove-Item -Recurse
  
 cd z:\Roon
 Write-Host "Removing TXT-files"
 # Ta bort txtfiler
-Get-ChildItem *.txt -Recurse | Remove-Item
+Get-ChildItem -filter *.txt -Recurse | Remove-Item -Recurse
 
 Write-Host "Removing NFO-files"
 # Ta bort NFO-filer
-Get-ChildItem *.nfo -Recurse | Remove-Item
+Get-ChildItem -filter *.nfo -Recurse | Remove-Item -Recurse
 
 Write-Host "Removing playlists"
 # Ta bort spellistor
-Get-ChildItem *.m3u* -Recurse | Remove-Item
+Get-ChildItem -filter *.m3u* -Recurse | Remove-Item -Recurse
 
 Write-Host "Removing logfiles"
 # Ta bort LOG-filer
-Get-ChildItem *.log -Recurse | Remove-Item
+Get-ChildItem -filter *.log -Recurse | Remove-Item -Recurse
 
 # Pause and wait for key press
 Write-Host "Done. Press the any key to exit."
