@@ -7,4 +7,4 @@ removefiles.bat - DOS batch script to remove extraneous music files before impor
 
 removefiles.ps1 - My first attempt at re-writing a DOS batch script to powershell. Mistakes time!
 
-rooncleaner.ps1 - Sometime things don't work out the way you want and an import into Roon leaves files unimported. This is trying to deal with that by ERASING the offending files. If you'd rather keep the files and try to save them, this is not for you.
+rooncleaner.ps1 - Sometimes things don't work out the way you want and an import into Roon leaves files unimported. This is trying to deal with that by ERASING the offending files. If you'd rather keep the files and try to save them, this is not for you.
