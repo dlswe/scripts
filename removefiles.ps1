@@ -9,29 +9,28 @@ cd Z:\Roon\Datum
 
 # Remove radio shows
 Write-Host "Removing radio shows"
-Get-ChildItem *-DVBS-* -Recurse | foreach { Remove-Item -Path $_.FullName }
-Get-ChildItem *-SAT-* -Recurse | foreach { Remove-Item -Path $_.FullName }
-Get-ChildItem *-DAB-* -Recurse | foreach { Remove-Item -Path $_.FullName }
+Get-ChildItem *-DVBS-* -Recurse | Remove-Item
+Get-ChildItem *-SAT-* -Recurse | Remove-Item
+Get-ChildItem *-DAB-* -Recurse | Remove-Item
  
 cd z:\Roon
 Write-Host "Removing TXT-files"
 # Ta bort txtfiler
-Get-ChildItem *.txt -Recurse | foreach { Remove-Item -Path $_.FullName }
+Get-ChildItem *.txt -Recurse | Remove-Item
 
 Write-Host "Removing NFO-files"
 # Ta bort NFO-filer
-Get-ChildItem *.nfo -Recurse | foreach { Remove-Item -Path $_.FullName }
+Get-ChildItem *.nfo -Recurse | Remove-Item
 
 Write-Host "Removing playlists"
 # Ta bort spellistor
-Get-ChildItem *.m3u* -Recurse | foreach { Remove-Item -Path $_.FullName }
+Get-ChildItem *.m3u* -Recurse | Remove-Item
 
 Write-Host "Removing logfiles"
 # Ta bort LOG-filer
-Get-ChildItem *.log -Recurse | foreach { Remove-Item -Path $_.FullName }
+Get-ChildItem *.log -Recurse | Remove-Item
 
 # Pause and wait for key press
 Write-Host "Done. Press the any key to exit."
 [void][System.Console]::ReadKey($FALSE)
 exit
-
