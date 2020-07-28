@@ -16,5 +16,6 @@ foreach ($Radnummer in (1..100)) {
     if ($ExcelXML.Workbook.Worksheet.Table.Row[$Radnummer].cell.data | Where-Object -f {$_.'#text' -eq "unable_to_load_image"}) {
         $Filename = ("Z:\Roon\" + $ExcelXML.Workbook.Worksheet.Table.Row[$Radnummer].cell.data.'#text'[5]).Replace("/","\")
         Write-Output "Deleting $Filename"
+        Remove-Item $Filename
     }
 }
