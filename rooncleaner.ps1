@@ -2,8 +2,8 @@
 # Author Daniel Lundh (c) 2020
 # Erases files with Reason: unable_to_load_image
 # YES, THIS WILL DELETE FILES. USE WITH CAUTION
-# usage rooncleaner.ps1 -infile filename
-# example:
+# Usage: rooncleaner.ps1 -infile filename
+# Example:
 # rooncleaner.ps1 -infile C:\Users\dlh\Desktop\Skipped.xls
 
 param (
