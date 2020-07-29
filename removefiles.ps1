@@ -1,6 +1,7 @@
 # Erase extraneous files from a music library
 # pwsh replacement for batch file
 # Author Daniel Lundh (c) 2020
+# NOTE: THIS SCRIPT WILL DELETE FILES. USE WITH CAUTION.
 clear
 
 Write-Host "This will remove radio shows, text-files, nfo-files and playlists"
